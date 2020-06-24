@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 
 //conenct to mongo
-mongoose.connect('mongodb+srv://debashis:yF2F7gZ5rSCV1FQC@cluster0-hjgzr.mongodb.net/graphql-test?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://<username>:<password>@<cluster_name>/<database>?retryWrites=true&w=majority');
 mongoose.connection.once('open',()=>{
     console.log('connected to database');
 });
